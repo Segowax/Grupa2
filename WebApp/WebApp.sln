@@ -10,7 +10,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.yml = .yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Server", "WebApp.Server\WebApp.Server.csproj", "{9B9428CF-D8A7-43F6-BA9B-384D43289EC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Client", "WebApp.Client\WebApp.Client.csproj", "{1B0260D1-901C-4C8E-80D8-617DACA89AB5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9428CF-D8A7-43F6-BA9B-384D43289EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9428CF-D8A7-43F6-BA9B-384D43289EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9428CF-D8A7-43F6-BA9B-384D43289EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9428CF-D8A7-43F6-BA9B-384D43289EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B0260D1-901C-4C8E-80D8-617DACA89AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0260D1-901C-4C8E-80D8-617DACA89AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0260D1-901C-4C8E-80D8-617DACA89AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0260D1-901C-4C8E-80D8-617DACA89AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
