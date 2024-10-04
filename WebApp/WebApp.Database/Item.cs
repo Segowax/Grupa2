@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿namespace WebApp.Database;
 
 public class Item
 {

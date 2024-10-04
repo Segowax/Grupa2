@@ -9,7 +9,7 @@ namespace WebApp.Server.Controllers
     public class UserController : ControllerBase
     {
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly Faker<User> _userFaker = new Faker<User>()
+        private readonly Faker<User> _userFaker = new Faker<User>() 
             .RuleFor(u => u.Id, f => f.IndexFaker)
             .RuleFor(u => u.FirstName, f => f.Name.FirstName())
             .RuleFor(u => u.LastName, f => f.Name.LastName())
