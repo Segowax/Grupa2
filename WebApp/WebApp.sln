@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Server", "WebApp.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Client", "WebApp.Client\WebApp.Client.csproj", "{1B0260D1-901C-4C8E-80D8-617DACA89AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Database", "WebApp.Database\WebApp.Database.csproj", "{A0436ABE-8710-47A1-A387-85106F990547}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Database", "WebApp.Database\WebApp.Database.csproj", "{A0436ABE-8710-47A1-A387-85106F990547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console", "console\console.csproj", "{0E809CFF-0934-4698-82A7-FACA670894ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{A0436ABE-8710-47A1-A387-85106F990547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0436ABE-8710-47A1-A387-85106F990547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0436ABE-8710-47A1-A387-85106F990547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E809CFF-0934-4698-82A7-FACA670894ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E809CFF-0934-4698-82A7-FACA670894ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E809CFF-0934-4698-82A7-FACA670894ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E809CFF-0934-4698-82A7-FACA670894ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
