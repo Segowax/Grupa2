@@ -18,6 +18,7 @@ namespace WebApp.Repository.IoC
             {
                 options.UseSqlServer(configuration.GetConnectionString("ShopDbContext"));
             });
+
             return services;
         }
     }

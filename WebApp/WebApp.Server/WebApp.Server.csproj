@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApp.Database\WebApp.Database.csproj" />
     <ProjectReference Include="..\WebApp.Repository\WebApp.Repository.csproj" />
   </ItemGroup>
 
