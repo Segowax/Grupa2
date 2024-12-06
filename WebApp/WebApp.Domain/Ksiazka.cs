@@ -7,9 +7,10 @@ using WebApp.Domain.BaseEntity;
 
 namespace WebApp.Domain
 {
-    public class Product : Base
+    public class Ksiazka : Base
     {
-        public required string Name { get; set; }
-        public required string Description { get; set; }
+        public required string Tytul { get; set; }
+        public required string Autor { get; set; }
+        public int Kategoria { get; set; }
     }
 }

@@ -8,5 +8,6 @@ namespace WebApp.Repository.DbContexts
         public ShopDbContext(DbContextOptions<ShopDbContext> options) : base(options) { }
 
         DbSet<Product> Products { get; set; }
+        DbSet<Ksiazka> Books { get; set; }
     }
 }
