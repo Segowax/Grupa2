@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebApp.Domain.BaseEntity
 {
-    public class Base
+    public abstract class Base
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public Guid Guid { get; set; }
 
     }

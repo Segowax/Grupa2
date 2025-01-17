@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApp.Domain;
+using WebApp.Repository.DataSeeding;
 
 namespace WebApp.Repository.DbContexts
 {
@@ -9,5 +10,10 @@ namespace WebApp.Repository.DbContexts
 
         DbSet<Product> Products { get; set; }
         DbSet<Ksiazka> Books { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Ksiazka>().Seed();
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
