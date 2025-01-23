@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApp.Repository.DbContexts;
 
@@ -11,9 +12,11 @@ using WebApp.Repository.DbContexts;
 namespace WebApp.Repository.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
-    partial class ShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250117111732_DataSeed")]
+    partial class DataSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace WebApp.Repository.Migrations
                         {
                             Id = 1,
                             Autor = "Adolf",
-                            Guid = new Guid("ba0295ba-428e-456a-9fb1-7d513015bf49"),
+                            Guid = new Guid("e9cd1162-5a49-42f5-97aa-1d73dcf952d1"),
                             Kategoria = 1,
                             Tytul = "MeineKaumpf"
                         },
@@ -61,7 +64,7 @@ namespace WebApp.Repository.Migrations
                         {
                             Id = 2,
                             Autor = "Adolf",
-                            Guid = new Guid("51e4ec51-dc76-4104-9cf7-a93b8ba6080a"),
+                            Guid = new Guid("b18233d5-d2c5-4035-b5ac-833d5b131cb6"),
                             Kategoria = 1,
                             Tytul = "MeineKaumpf"
                         });
