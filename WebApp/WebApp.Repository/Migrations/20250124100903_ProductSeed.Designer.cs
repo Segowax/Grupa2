@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApp.Repository.DbContexts;
 
@@ -11,9 +12,11 @@ using WebApp.Repository.DbContexts;
 namespace WebApp.Repository.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
-    partial class ShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250124100903_ProductSeed")]
+    partial class ProductSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace WebApp.Repository.Migrations
                         {
                             Id = 1,
                             Autor = "Adolf",
-                            Guid = new Guid("e5e9debd-825c-4604-b8de-f53bceea17b4"),
+                            Guid = new Guid("c6222742-2af4-45ce-aaf7-a170b90badd1"),
                             Kategoria = 1,
                             Tytul = "MeineKaumpf"
                         },
@@ -61,7 +64,7 @@ namespace WebApp.Repository.Migrations
                         {
                             Id = 2,
                             Autor = "Adolf",
-                            Guid = new Guid("7c1b69c3-3045-49cf-960d-eee8c2968770"),
+                            Guid = new Guid("a7569fde-9114-4e8b-b420-49da01967ea3"),
                             Kategoria = 1,
                             Tytul = "MeineKaumpf"
                         });
@@ -95,22 +98,15 @@ namespace WebApp.Repository.Migrations
                         {
                             Id = 1,
                             Description = "Description",
-                            Guid = new Guid("608ef04e-5dbe-40cb-ad41-8f9b43ac45b5"),
+                            Guid = new Guid("f5af9cfb-caa7-4f7f-8223-5a1f15e5b073"),
                             Name = "Name"
                         },
                         new
                         {
                             Id = 2,
                             Description = "Description",
-                            Guid = new Guid("accf3729-cc66-4b2b-a6ea-0056f0c1fd3b"),
+                            Guid = new Guid("814dde23-05d8-4fab-87a7-00d0f305e315"),
                             Name = "Mimi"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Description",
-                            Guid = new Guid("05f6d081-fcfd-4bfa-b964-d719cb84a741"),
-                            Name = "ututut"
                         });
                 });
 #pragma warning restore 612, 618

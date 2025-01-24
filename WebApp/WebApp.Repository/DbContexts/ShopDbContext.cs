@@ -13,6 +13,7 @@ namespace WebApp.Repository.DbContexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Ksiazka>().Seed();
+            modelBuilder.Entity<Product>().Seed();
             base.OnModelCreating(modelBuilder);
         }
     }
