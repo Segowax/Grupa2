@@ -8,7 +8,10 @@ namespace WebApp.Domain
 {
     public class locale
     {
-        public int Id { get; set; }
+        public int cena;
+        public int typ;
+
+        public int id { get; set; }
         public string nazwa { get; set; }
         public string miasto { get; set; }
         public string ulica { get; set; }

@@ -8,7 +8,7 @@ namespace WebApp.Domain
 {
     public class dania
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         public int typ { get; set; }
         public string nazwa { get; set; }
         public int cena { get; set; }
