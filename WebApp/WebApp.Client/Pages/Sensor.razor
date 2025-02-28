@@ -1,0 +1,26 @@
+﻿@page "/sensor"
+@using System.Net.Http
+@using System.Net.Http.Json
+
+@using static System.Net.WebRequestMethods
+
+@inject IHttpClientFactory _clientFactory
+
+<h3>Sensor</h3>
+
+@code {
+	private string sensorData;
+
+	protected override async Task OnInitializedAsync()
+	{
+		var httpClient = _clientFactory.CreateClient("sensor");
+		try
+		{
+			sensorData = await httpClient.GetStringAsync("api/sensor");
+		}
+		catch (Exception ex)
+		{
+			sensorData = "Bład:" + ex.Message;
+		}
+	}
+}
