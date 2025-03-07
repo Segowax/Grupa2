@@ -1,7 +1,62 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@inject IHttpClientFactory HttpFactory
 
-<h1>Hello, world!</h1>
+<h1>Fetched data</h1>
 
-Welcome to your new app.
+@if (data == null) {
+	<strong>Loading</strong>
+} else {
+	<style> 
+	.table{
+		background-color:#FE347E;
+		color:white;
+	}
+	h1{
+		color: deeppink;
+		display: flex;
+		position: relative;
+		top: 0;
+		left: 40%;
+	}
+	</style>
+	<table class="table">
+		<thead>
+			<tr>
+			<th>Name</th>
+			<th>SensorId</th>
+			<th>EnqueuedTime</th>
+			<th>Value</th>
+		</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in data  ){
+				<tr>
+					<td>@item.Name</td>
+					<td>@item.SensorId</td>
+					<td>@item.EnqueuedTime</td>
+					<td>@item.Value</td>
+
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+@code {
+	private List<Data> data;
+
+	protected override async Task OnInitializedAsync()
+	{
+		var HttpClient = HttpFactory.CreateClient("Masza-alkasza");
+
+		data = await HttpClient.GetFromJsonAsync<List<Data>>("api/Sensor/GetAll");
+	}
+
+	public class Data {
+		public string Name { get; set; }
+		public string SensorId { get; set; }
+		public DateTime EnqueuedTime { get; set; }
+		public object Value { get; set; }
+	}
+}
